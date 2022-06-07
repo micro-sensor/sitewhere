@@ -1,0 +1,12 @@
+on: [push]
+
+jobs:
+  microsensor:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Perform the smells analysis.
+        uses: edson-a-soares/microsensor@development
+
